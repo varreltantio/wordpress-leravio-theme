@@ -6,7 +6,7 @@ get_header();
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <div class="banner-content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
+        <div class="banner-content">
           <h1 class="title">Buat Website Dengan Cepat Sekarang.</h1>
           <span class="subtitle">Leravio merupakan tempat membuat Website dengan cepat sekarang dan juga belajar bahasa pemrograman yang lengkap.</span>
           <a href="contact.html" class="axil-btn btn-fill-primary btn-large">Hubungi Kami</a>
@@ -14,17 +14,17 @@ get_header();
       </div>
       <div class="col-lg-6">
         <div class="banner-thumbnail">
-          <div class="large-thumb" data-sal="zoom-in" data-sal-duration="500" data-sal-delay="300">
+          <div class="large-thumb">
             <img src="<?php echo get_theme_file_uri("assets/media/banner/laptop.png") ?>" alt="Laptop">
           </div>
           <ul class="list-unstyled shape-group">
-            <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="400">
+            <li class="shape shape-1">
               <img src="<?php echo get_theme_file_uri("assets/media/banner/marker.png") ?>" alt="Marker">
             </li>
-            <li class="shape shape-2" data-sal="slide-right" data-sal-duration="500" data-sal-delay="500">
+            <li class="shape shape-2">
               <img src="<?php echo get_theme_file_uri("assets/media/banner/chat-icon.png") ?>" alt="Chat">
             </li>
-            <li class="shape shape-3" data-sal="slide-left" data-sal-duration="500" data-sal-delay="600">
+            <li class="shape shape-3">
               <img src="<?php echo get_theme_file_uri("assets/media/banner/sticker.png") ?>" alt="sticker">
             </li>
           </ul>
@@ -33,19 +33,19 @@ get_header();
     </div>
   </div>
   <ul class="list-unstyled shape-group-13">
-    <li class="shape shape-1" data-sal="slide-down" data-sal-duration="500" data-sal-delay="100">
+    <li class="shape shape-1">
       <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-18.png") ?>" alt="Bubble">
     </li>
-    <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
+    <li class="shape shape-2">
       <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-19.png") ?>" alt="Bubble">
     </li>
-    <li class="shape shape-3" data-sal="slide-left" data-sal-duration="500" data-sal-delay="700">
+    <li class="shape shape-3">
       <img src="<?php echo get_theme_file_uri("assets/media/others/hand-2.png") ?>" alt="Hand">
     </li>
-    <li class="shape shape-4" data-sal="slide-left" data-sal-duration="500" data-sal-delay="700">
+    <li class="shape shape-4">
       <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-14.png") ?>" alt="Bubble">
     </li>
-    <li class="shape shape-5" data-sal="slide-left" data-sal-duration="500" data-sal-delay="700">
+    <li class="shape shape-5">
       <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-14.png") ?>" alt="Bubble">
     </li>
   </ul>
@@ -60,7 +60,7 @@ get_header();
         blandit rutrum eget vulputate augue sed eu imperdiet.</p>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+      <div class="col-lg-4 col-md-6">
         <div class="services-grid active">
           <div class="thumbnail">
             <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-1.png") ?>" alt="icon">
@@ -72,7 +72,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+      <div class="col-lg-4 col-md-6">
         <div class="services-grid">
           <div class="thumbnail">
             <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-2.png") ?>" alt="icon">
@@ -84,7 +84,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+      <div class="col-lg-4 col-md-6">
         <div class="services-grid">
           <div class="thumbnail">
             <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-6.png") ?>" alt="icon">
