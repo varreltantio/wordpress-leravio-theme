@@ -11,9 +11,9 @@
     </div>
   </div>
   <ul class="shape-group-8 list-unstyled">
-    <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-9.png") ?>" alt="Bubble"></li>
-    <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-10.png") ?>" alt="Bubble"></li>
-    <li class="shape shape-3" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300"><img src="<?php echo get_theme_file_uri("assets/media/others/line-4.png") ?>" alt="Line"></li>
+    <li class="shape shape-1"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-9.png") ?>" alt="Bubble"></li>
+    <li class="shape shape-2"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-10.png") ?>" alt="Bubble"></li>
+    <li class="shape shape-3"><img src="<?php echo get_theme_file_uri("assets/media/others/line-4.png") ?>" alt="Line"></li>
   </ul>
 </div>
 
