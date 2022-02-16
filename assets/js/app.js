@@ -30,8 +30,6 @@
       axilInit.axilHover();
       axilInit.onePageTopFixed();
       axilInit.blogModalActivation();
-      axilInit.portfolioModalActivation();
-      axilInit.caseModalActivation();
     },
 
     w: function (e) {
@@ -337,72 +335,6 @@
           ) {
             popupMenuWrap.trigger("click");
           }
-        });
-      }
-    },
-
-    portfolioModalActivation: function () {
-      var modalBox = $(".op-portfolio-modal");
-      var projectList = $(".project-grid");
-      var modalClose = modalBox.find(".close");
-
-      if ($("body").hasClass("onepage-template")) {
-        projectList.each(function () {
-          var $this = $(this);
-          var buttons = $this.find(".thumbnail a, .title a");
-          var mainImg = $this.find(".thumbnail .modal-thumb");
-          var title = $this.find(".title");
-          var paragraph = $this.find(".content p");
-          var socialShare = $this.find(".project-share");
-          buttons.on("click", function (e) {
-            $("body").addClass("op-modal-open");
-            modalBox.addClass("open");
-            mainImg.clone().appendTo(".op-modal-content .portfolio-thumbnail");
-            title.clone().appendTo(".op-modal-content .portfolio-content");
-            paragraph.clone().appendTo(".op-modal-content .portfolio-content");
-            socialShare
-              .clone()
-              .appendTo(".op-modal-content .portfolio-content");
-            e.preventDefault();
-          });
-        });
-
-        modalClose.on("click", function (e) {
-          $("body").removeClass("op-modal-open");
-          modalBox.removeClass("open");
-          modalBox.find(".op-modal-content .portfolio-content").html("");
-          modalBox.find(".op-modal-content .portfolio-thumbnail").html("");
-          e.preventDefault();
-        });
-      }
-    },
-
-    caseModalActivation: function () {
-      var modalBox = $(".op-case-modal");
-      var caseList = $(".case-study-featured");
-      var modalClose = modalBox.find(".close");
-
-      if ($("body").hasClass("onepage-template")) {
-        caseList.each(function () {
-          var $this = $(this);
-          var buttons = $this.find(".axil-btn");
-          var title = $this.find(".title");
-          var paragraph = $this.find(".section-heading p");
-
-          buttons.on("click", function (e) {
-            $("body").addClass("op-modal-open");
-            modalBox.addClass("open");
-            title.clone().appendTo(".op-modal-content .case-content");
-            paragraph.clone().appendTo(".op-modal-content .case-content");
-            e.preventDefault();
-          });
-        });
-
-        modalClose.on("click", function (e) {
-          $("body").removeClass("op-modal-open");
-          modalBox.removeClass("open");
-          modalBox.find(".op-modal-content .case-content").html("");
-          e.preventDefault();
         });
       }
     },

@@ -44,9 +44,20 @@
         <div class="container">
           <div class="header-navbar">
             <div class="header-logo">
-              <a href="<?php echo site_url() ?>"><img class="light-version-logo" src="<?php echo get_theme_file_uri("assets/media/logo.svg") ?>" alt="logo"></a>
-              <a href="<?php echo site_url() ?>"><img class="dark-version-logo" src=" <?php echo get_theme_file_uri("assets/media/logo-3.svg") ?>" alt="logo"></a>
-              <a href="<?php echo site_url() ?>"><img class="sticky-logo" src="<?php echo get_theme_file_uri("assets/media/logo-2.svg") ?>" alt="logo"></a>
+              <?php
+              $custom_logo_id = get_theme_mod('custom_logo');
+              $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+
+              if (has_custom_logo()) {
+                echo '<a href="' . esc_url(home_url('/')) . '" rel="home">';
+                echo '<img width="167" height="60" class="light-version-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                echo '</a>';
+                echo '<a href="' . esc_url(home_url('/')) . '" rel="home">';
+                echo '<img width="167" height="60" class="dark-version-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                echo '</a>';
+              } else {
+                echo '<h1>' . get_bloginfo('name') . '</h1>';
+              } ?>
             </div>
             <div class="header-main-nav">
               <!-- Start Mainmanu Nav -->

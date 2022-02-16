@@ -122,7 +122,7 @@ get_header();
       while ($homepagePosts->have_posts()) {
         $homepagePosts->the_post(); ?>
 
-        <div class="col-xl-6" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
+        <div class="col-xl-6">
           <div class="blog-list active">
             <div class="post-thumbnail">
               <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('homeBlog') ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></a>

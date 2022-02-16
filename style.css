@@ -4,7 +4,7 @@ Theme URI: https://leravio.com
 Description: Leravio Scratch Theme
 Author: Leravio
 Author URI: https://leravio.com
-Version: 1.0
+Version: 1.1
 */
 /* SASS and Global'ish Stuff */
 :root {
@@ -479,14 +479,6 @@ input {
     height: auto;
     padding: 0;
   }
-}
-
-.input-group:before {
-  content: url("../media/icon/message.png");
-  position: absolute;
-  left: 30px;
-  top: 24px;
-  z-index: 1;
 }
 
 @media only screen and (max-width: 479px) {
@@ -2368,9 +2360,9 @@ input {
 .my_switcher {
   position: fixed;
   top: 200px;
-  left: 0;
+  right: 0;
   background-color: var(--color-primary);
-  border-radius: 0 30px 30px 0;
+  border-radius: 30px 0 0 30px;
   padding: 10px;
   z-index: 5;
 }
@@ -5182,7 +5174,7 @@ input {
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .axil-mainmenu {
-    padding: 35px 0;
+    padding: 25px 0;
   }
 }
 
@@ -6357,10 +6349,6 @@ input {
   background-color: #171717;
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-
-.active-dark-mode .input-group::before {
-  content: url("../media/icon/message-light.png");
 }
 
 @media only screen and (max-width: 479px) {

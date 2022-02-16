@@ -1,5 +1,33 @@
 <?php
 
+function pageBreadCrumb($args = NULL)
+{
+  if (!$args['archive']) {
+    $args['archive'] = get_the_archive_title();
+  }
+
+  if (!$args['title']) {
+    $args['title'] = get_the_title();
+  }
+?>
+  <div class="breadcrum-area">
+    <div class="container">
+      <div class="breadcrumb">
+        <ul class="list-unstyled">
+          <li><a href="<?php echo site_url(); ?>">Home</a></li>
+          <li class="active"><?php echo $args['archive']; ?></li>
+        </ul>
+        <h1 class="title h2"><?php echo $args['title']; ?></h1>
+      </div>
+    </div>
+    <ul class="shape-group-8 list-unstyled">
+      <li class="shape shape-1"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-9.png") ?>" alt="Bubble"></li>
+      <li class="shape shape-2"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-11.png") ?>" alt="Bubble"></li>
+      <li class="shape shape-3"><img src="<?php echo get_theme_file_uri("assets/media/others/line-4.png") ?>" alt="Line"></li>
+    </ul>
+  </div>
+<?php }
+
 function leravio_file()
 {
   wp_enqueue_script('main-leravio-js', get_theme_file_uri('/assets/js/app.js'), NULL, microtime(), true);
@@ -16,6 +44,22 @@ function leravio_file()
 }
 
 add_action('wp_enqueue_scripts', 'leravio_file');
+
+function leravio_custom_logo_setup()
+{
+  $defaults = array(
+    'height'               => 60,
+    'width'                => 187,
+    'flex-height'          => true,
+    'flex-width'           => true,
+    'header-text'          => array('site-title', 'site-description'),
+    'unlink-homepage-logo' => true,
+  );
+
+  add_theme_support('custom-logo', $defaults);
+}
+
+add_action('after_setup_theme', 'leravio_custom_logo_setup');
 
 function leravio_features()
 {

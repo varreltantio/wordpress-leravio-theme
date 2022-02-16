@@ -1,19 +1,19 @@
 <?php get_header(); ?>
 <div class="breadcrum-area breadcrumb-banner">
   <div class="container">
-    <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
+    <div class="section-heading heading-left">
       <h1 class="title h2">Our Courses</h1>
       <p>A quick view of industry specific problems solved with design by the awesome team at Abstrak.</p>
     </div>
-    <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
+    <div class="banner-thumbnail">
       <img class="paralax-image" src="<?php echo get_theme_file_uri("assets/media/banner/banner-thumb-1.png") ?>" alt="Illustration">
     </div>
   </div>
   <ul class="shape-group-8 list-unstyled">
-    <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100">
+    <li class="shape shape-1">
       <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-9.png") ?>" alt="Bubble">
     </li>
-    <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
+    <li class="shape shape-2">
       <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-20.png") ?>" alt="Bubble">
     </li>
   </ul>
