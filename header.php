@@ -62,18 +62,6 @@
             <div class="header-main-nav">
               <!-- Start Mainmanu Nav -->
               <nav class="mainmenu-nav" id="mobilemenu-popup">
-                <div class="d-block d-lg-none">
-                  <div class="mobile-nav-header">
-                    <div class="mobile-nav-logo">
-                      <a href="#">
-                        <img class="light-mode" src="<?php echo get_theme_file_uri("assets/media/logo-2.svg") ?>" alt="Site Logo">
-                        <img class="dark-mode" src=" <?php echo get_theme_file_uri("assets/media/logo-3.svg") ?>" alt="Site Logo">
-                      </a>
-                    </div>
-                    <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
-                  </div>
-                </div>
-
                 <?php wp_nav_menu(array(
                   'menu_class' => 'mainmenu',
                   'theme_location' => 'headerMenuLocation'
@@ -103,7 +91,7 @@
                   <ul>
                     <li title="Light Mode">
                       <a href="javascript:void(0)" class="setColor light" data-theme="light">
-                        <i class="fal fa-lightbulb-on"></i>
+                        <i class="fa-regular fa-lightbulb"></i>
                       </a>
                     </li>
                     <li title="Dark Mode">

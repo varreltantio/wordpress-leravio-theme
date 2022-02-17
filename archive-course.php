@@ -22,25 +22,27 @@
 
 <section class="section section-padding-equal project-column-4 pt--200 pt_md--80 pt_sm--60">
   <div class="container-fluid plr--30">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+    <div class="row row-cols-md-2 row-cols-lg-3">
       <?php
       while (have_posts()) {
         the_post(); ?>
-        <div class="col">
-          <div class="project-grid">
-            <div class="thumbnail">
-              <a href="<?php the_permalink(); ?>">
-                <img src="<?php the_post_thumbnail_url('homeCourse') ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>">
-              </a>
+        <div class="col-md mb-5 mb-lg-0 mt-5">
+          <div class="card border shadow p-2 blog-list active">
+            <div class="post-thumbnail">
+              <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></a>
             </div>
-            <div class="content">
-              <h5 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-              <span class="subtitle"><?php if (has_excerpt()) {
-                                        echo wp_trim_words(get_the_excerpt(), 18);
-                                      } else {
-                                        echo wp_trim_words(get_the_content(), 18);
-                                      } ?>
-              </span>
+
+            <div class="px-2 pb-0 pt-4 post-content">
+              <ul class="blog-meta list-unstyled mb-3">
+                <li><?php the_modified_date(); ?></li>
+                <li><?php echo reading_time(); ?></li>
+              </ul>
+
+              <h5 class="title">
+                <a href="<?php the_permalink() ?>">
+                  <?php the_title() ?>
+                </a>
+              </h5>
             </div>
           </div>
         </div>

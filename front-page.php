@@ -66,9 +66,9 @@ get_header();
             <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-1.png") ?>" alt="icon">
           </div>
           <div class="content">
-            <h5 class="title"> <a href="service-design.html">Design</a></h5>
+            <h5 class="title"> <a href="#">Design</a></h5>
             <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
-            <a href="service-design.html" class="more-btn">Find out more</a>
+            <a href="#" class="more-btn">Find out more</a>
           </div>
         </div>
       </div>
@@ -78,9 +78,9 @@ get_header();
             <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-2.png") ?>" alt="icon">
           </div>
           <div class="content">
-            <h5 class="title"> <a href="service-development.html">Development</a></h5>
+            <h5 class="title"> <a href="#">Development</a></h5>
             <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
-            <a href="service-development.html" class="more-btn">Find out more</a>
+            <a href="#" class="more-btn">Find out more</a>
           </div>
         </div>
       </div>
@@ -90,9 +90,9 @@ get_header();
             <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-6.png") ?>" alt="icon">
           </div>
           <div class="content">
-            <h5 class="title"> <a href="service-content-strategy.html">Content strategy</a></h5>
+            <h5 class="title"> <a href="#">Content strategy</a></h5>
             <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
-            <a href="service-content-strategy.html" class="more-btn">Find out more</a>
+            <a href="#" class="more-btn">Find out more</a>
           </div>
         </div>
       </div>
@@ -113,36 +113,40 @@ get_header();
       <h2 class="title">Latest stories</h2>
       <p>News From Abstrak And Around The World Of Web Design And Complete Solution of Online Digital Marketing </p>
     </div>
-    <div class="row g-0">
+    <div class="row row-cols-md-2 row-cols-lg-3">
       <?php
       $homepagePosts = new WP_Query(array(
-        'posts_per_page' => 2,
+        'posts_per_page' => 6,
       ));
 
       while ($homepagePosts->have_posts()) {
         $homepagePosts->the_post(); ?>
-
-        <div class="col-xl-6">
-          <div class="blog-list active">
+        <div class="col-md mb-5 mb-lg-0 mt-5">
+          <div class="card border shadow p-2 blog-list active">
             <div class="post-thumbnail">
-              <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url('homeBlog') ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></a>
+              <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></a>
             </div>
-            <div class="post-content">
-              <h5 class="title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h5>
-              <p><?php if (has_excerpt()) {
-                    echo wp_trim_words(get_the_excerpt(), 18);
-                  } else {
-                    echo wp_trim_words(get_the_content(), 18);
-                  } ?>
-              </p>
-              <a href="<?php the_permalink() ?>" class="more-btn">Learn more<i class="far fa-angle-right"></i></a>
+
+            <div class="px-2 pb-0 pt-4 post-content">
+              <ul class="blog-meta list-unstyled mb-3">
+                <li><?php the_modified_date(); ?></li>
+                <li><?php echo reading_time(); ?></li>
+              </ul>
+
+              <h5 class="title">
+                <a href="<?php the_permalink() ?>">
+                  <?php the_title() ?>
+                </a>
+              </h5>
             </div>
           </div>
         </div>
+
       <?php }
       wp_reset_postdata();
       ?>
     </div>
+
   </div>
   <ul class="shape-group-1 list-unstyled">
     <li class="shape shape-1"><img src="<?php echo get_theme_file_uri("assets/media/others/bubble-1.png") ?>" alt="bubble"></li>
