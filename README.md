@@ -1,14 +1,16 @@
-# [WordPress Theme - Leravio] 🎨
+# [WordPress Theme - Leravio v1.2] 🎨
+
 [![Project Status: Active.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-* A WordPress theme Project for Advanced WordPress Theme Development Course.
-This theme uses Bootstrap. [Learn](https://www.youtube.com/playlist?list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h) to build an Advanced WordPress Theme from scratch
+- A WordPress theme Project for Advanced WordPress Theme Development Course.
+  This theme uses Bootstrap. [Learn](https://www.youtube.com/playlist?list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h) to build an Advanced WordPress Theme from scratch
 
 <a href="https://codeytek.com/course/advanced-wordpress-theme-development-course/" target="_blank">
 <img src="https://codeytek.com/wp-content/uploads/2020/07/banner.png" alt="WordPress theme development banner" />
 </a>
 
 ## [Tutorial Course](https://codeytek.com/course/advanced-wordpress-theme-development-course/)
+
 ## Also See - [Advanced WordPress Plugin Development](https://github.com/imranhsayed/aquila-features)
 
 ## Features
@@ -21,14 +23,14 @@ This theme uses Bootstrap. [Learn](https://www.youtube.com/playlist?list=PLD8nQC
 
 ## Maintainer
 
-| Name                                                   | Github Username |
-|--------------------------------------------------------|-----------------|
-| [Varrel Tantio](mailto:varreldtantio@gmail.com)       |  @varreltantio   |
+| Name                                            | Github Username |
+| ----------------------------------------------- | --------------- |
+| [Varrel Tantio](mailto:varreldtantio@gmail.com) | @varreltantio   |
 
 ## Usage
 
 1. Clone the WordPress theme [Leravio](https://github.com/varreltantio/wordpress-leravio-theme) in your WordPress
-themes directory and activate it.
+   themes directory and activate it.
 
 ## Dashboard Setup.
 
@@ -135,7 +137,8 @@ Directory Structure
 ### Fixing Errors
 
 1. Error: Node Sass does not yet support your current environment
-Solution : 
+   Solution :
+
 ```shell
 cd assets
 npm rebuild node-sass

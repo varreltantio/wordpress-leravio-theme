@@ -17,7 +17,7 @@ pageBreadCrumb(array(
           <div class="blog-grid">
             <h3 class="title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
             <div class="post-thumbnail">
-              <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+              <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></a>
             </div>
             <p><?php the_excerpt() ?></p>
             <a href="<?php the_permalink() ?>" class="axil-btn btn-borderd btn-large">Read More</a>

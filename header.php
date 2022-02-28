@@ -18,10 +18,6 @@
     <i class="fa-solid fa-arrow-up"></i>
   </a>
 
-  <!-- Preloader Start Here -->
-  <div id="preloader"></div>
-  <!-- Preloader End Here -->
-
   <div class="my_switcher d-none d-lg-block">
     <ul>
       <li title="Light Mode">

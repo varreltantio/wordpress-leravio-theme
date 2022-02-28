@@ -59,7 +59,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="footer-copyright text-center">
-            <span class="copyright-text">© 2022. All rights reserved by <a href="https://leravio.com/">Leravio</a>.</span>
+            <span class="copyright-text">&copy; Copyright <?php echo date("Y"); ?>. All rights reserved by <a href="https://leravio.com/">Leravio</a>.</span>
           </div>
         </div>
       </div>

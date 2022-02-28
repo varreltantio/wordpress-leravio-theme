@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
+        <div class="section-heading heading-left">
           <h1 class="title h2"><?php the_title(); ?></h1>
           <?php
           if (has_category()) {
@@ -24,21 +24,21 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
-          <?php the_post_thumbnail(); ?>
+        <div class="banner-thumbnail">
+          <img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>">
         </div>
       </div>
     </div>
   </div>
   <ul class="shape-group-8 list-unstyled">
-    <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100">
-      <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-9.png") ?>" alt="Bubble">
+    <li class="shape shape-1">
+      <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-9.png") ?>" alt="Leravio Course 1">
     </li>
-    <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
-      <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-20.png") ?>" alt="Bubble">
+    <li class="shape shape-2">
+      <img src="<?php echo get_theme_file_uri("assets/media/others/bubble-20.png") ?>" alt="Leravio Course 2">
     </li>
-    <li class="shape shape-3" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
-      <img src="<?php echo get_theme_file_uri("assets/media/others/line-4.png") ?>" alt="Line">
+    <li class="shape shape-3">
+      <img src="<?php echo get_theme_file_uri("assets/media/others/line-4.png") ?>" alt="Leravio Course 3">
     </li>
   </ul>
 </div>

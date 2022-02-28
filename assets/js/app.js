@@ -24,7 +24,6 @@
       axilInit.axilSlickActivation();
       axilInit.magnificPopupActivation();
       axilInit.countdownInit(".countdown", "2022/12/01");
-      axilInit.tiltAnimation();
       axilInit.menuLinkActive();
       axilInit.marqueImages();
       axilInit.axilHover();
@@ -209,20 +208,6 @@
               "<div class='countdown-section'><div><div class='countdown-number'>%D</div> <div class='countdown-unit'>Day%!D</div> </div></div><div class='countdown-section'><div><div class='countdown-number'>%H</div> <div class='countdown-unit'>Hour%!H</div> </div></div><div class='countdown-section'><div><div class='countdown-number'>%M</div> <div class='countdown-unit'>Minutes</div> </div></div><div class='countdown-section'><div><div class='countdown-number'>%S</div> <div class='countdown-unit'>Seconds</div> </div></div>"
             )
           );
-        });
-      }
-    },
-
-    tiltAnimation: function () {
-      var _tiltAnimation = $(".paralax-image");
-      if (_tiltAnimation.length) {
-        _tiltAnimation.tilt({
-          max: 12,
-          speed: 1e3,
-          easing: "cubic-bezier(.03,.98,.52,.99)",
-          transition: !1,
-          perspective: 1e3,
-          scale: 1,
         });
       }
     },

@@ -15,7 +15,7 @@ pageBreadCrumb(array(
           <div class="single-blog">
             <div class="single-blog-content blog-grid">
               <div class="post-thumbnail">
-                <?php the_post_thumbnail(); ?>
+                <img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>">
               </div>
 
               <div class="author">
@@ -29,7 +29,17 @@ pageBreadCrumb(array(
               </div>
 
               <article>
-                <?php the_content(); ?>
+                <?php
+                the_content();
+
+                if (has_tag()) {
+                  echo '<p class="mt--20 mb-2">Tags:</p>';
+
+                  foreach ((get_the_tags()) as $tag) {
+                    echo '<span class="btn btn-dark m-1">' . $tag->name . '</span>';
+                  }
+                }
+                ?>
               </article>
             </div>
           </div>
