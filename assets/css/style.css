@@ -7366,10 +7366,26 @@ article h6 {
   text-transform: capitalize;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  article h2 {
+    font-size: 48px;
+  }
+}
+
 .active-light-mode article {
   color: var(--color-text-dark);
 }
 
 .active-dark-mode article a mark {
   color: var(--color-blue-shade) !important;
+}
+
+#comment,
+#author,
+#email,
+#url {
+  margin-top: 10px;
+  color: #1d1d1d;
+  font-family: "Luicida Console", "Courier New", "Courier", monospace;
+  border: #000000 solid 1px;
 }

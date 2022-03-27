@@ -33,11 +33,13 @@ pageBreadCrumb(array(
                 the_content();
 
                 if (has_tag()) {
+                  echo '<div class="tags">';
                   echo '<p class="mt--20 mb-2">Tags:</p>';
 
                   foreach ((get_the_tags()) as $tag) {
                     echo '<span class="btn btn-dark m-1">' . $tag->name . '</span>';
                   }
+                  echo '</div>';
                 }
                 ?>
               </article>
@@ -48,6 +50,16 @@ pageBreadCrumb(array(
       </div>
 
       <?php get_template_part('template-parts/content', 'sidebar') ?>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <?php
+        if (comments_open() || get_comments_number()) {
+          comments_template();
+        }
+        ?>
+      </div>
     </div>
   </div>
 </section>

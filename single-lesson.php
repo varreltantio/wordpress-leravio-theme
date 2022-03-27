@@ -28,14 +28,26 @@ pageBreadCrumb(array(
               </div>
 
               <article>
-                <?php the_content(); ?>
+                <?php the_content();
+
+                $terms = get_the_terms(get_the_ID(), 'tag-course');
+                if ($terms) {
+                  echo '<div class="tags">';
+                  echo '<p class="mt--20 mb-2">Tags:</p>';
+                  foreach ($terms as $term) {
+                    echo '<span class="btn btn-dark m-1">' . $term->name . '</span>';
+                  }
+                  echo '</div>';
+                }
+                ?>
               </article>
             </div>
           </div>
 
         <?php } ?>
 
-        <div class="widget widget-categories">
+        <div class="widget widget-categories mt-5">
+          <h3>Curriculum</h3>
           <?php
           $getCourse = get_field('related_courses');
 

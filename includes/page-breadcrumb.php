@@ -17,7 +17,7 @@ function pageBreadCrumb($args = NULL)
           <li><a href="<?php echo site_url(); ?>">Home</a></li>
           <li class="active"><?php echo $args['archive']; ?></li>
         </ul>
-        <h1 class="title h2"><?php echo $args['title']; ?></h1>
+        <h1 class="title"><?php echo $args['title']; ?></h1>
       </div>
     </div>
     <ul class="shape-group-8 list-unstyled">

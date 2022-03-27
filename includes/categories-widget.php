@@ -5,14 +5,26 @@ Plugin Name: Leravio Categories Widget
 Version: 1.0
 */
 
-class Leravio_Widget_Categories extends WP_Widget
+class leravio_widget_categories extends WP_Widget
 {
-
-  function Leravio_Widget_Categories()
+  function __construct()
   {
-    $widget_ops = array('classname' => 'widget-categories', 'description' => __("My list or dropdown of categories"));
-    $this->WP_Widget('custom_categories_widget', __('Custom Categories Widget (Leravio)'), $widget_ops);
+    parent::__construct(
+
+      // Base ID of your widget
+      'leravio_widget_categories',
+
+      // Widget name will appear in UI
+      __('Custom Categories Widget (Leravio)', 'leravio_widget_categories_domain'),
+
+      // Widget description
+      array(
+        'description' => __('My list or dropdown of categories', 'leravio_widget_categories_domain'),
+        'classname' => 'widget-categories'
+      )
+    );
   }
+
 
   function widget($args, $instance)
   {
@@ -100,11 +112,13 @@ class Leravio_Widget_Categories extends WP_Widget
     $number = esc_attr($instance['number']);
 
     ?>
-    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
+    <p>
+      <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
     </p>
 
-    <p><input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('dropdown'); ?>" name="<?php echo $this->get_field_name('dropdown'); ?>" <?php checked($dropdown); ?> />
+    <p>
+      <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('dropdown'); ?>" name="<?php echo $this->get_field_name('dropdown'); ?>" <?php checked($dropdown); ?> />
       <label for="<?php echo $this->get_field_id('dropdown'); ?>"><?php _e('Show as dropdown'); ?></label><br />
 
       <input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>" <?php checked($count); ?> />
@@ -121,8 +135,8 @@ class Leravio_Widget_Categories extends WP_Widget
   }
 }
 
-function cw_load_leravio_widget_categories()
+function leravio_load_widget_categories()
 {
-  register_widget('Leravio_Widget_Categories');
+  register_widget('leravio_widget_categories');
 }
-add_action('widgets_init', 'cw_load_leravio_widget_categories');
+add_action('widgets_init', 'leravio_load_widget_categories');

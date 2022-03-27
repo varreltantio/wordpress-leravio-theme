@@ -3,7 +3,7 @@
   <div class="container">
     <div class="section-heading heading-left">
       <h1 class="title h2">Our Courses</h1>
-      <p>A quick view of industry specific problems solved with design by the awesome team at Abstrak.</p>
+      <p>Kumpulan daftar Courses yang dimiliki oleh Leravio</p>
     </div>
     <div class="banner-thumbnail">
       <img class="paralax-image" src="<?php echo get_theme_file_uri("assets/media/banner/banner-thumb-1.png") ?>" alt="Illustration">
