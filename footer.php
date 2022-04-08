@@ -17,8 +17,7 @@
           <div class="footer-widget border-end">
             <div class="footer-newsletter">
               <h2 class="title">Get in touch!</h2>
-              <p>Fusce varius, dolor tempor interdum tristique, dui urna bib
-                endum magna, ut ullamcorper purus</p>
+              <p>Leravio merupakan tempat membuat Website dengan cepat sekarang dan juga belajar bahasa pemrograman yang lengkap.</p>
               <form>
                 <div class="input-group">
                   <input type="email" class="form-control" placeholder="Email address">

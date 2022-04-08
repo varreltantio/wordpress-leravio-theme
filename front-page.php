@@ -15,17 +15,17 @@ get_header();
       <div class="col-lg-6">
         <div class="banner-thumbnail">
           <div class="large-thumb">
-            <img src="<?php echo get_theme_file_uri("assets/media/banner/laptop.png") ?>" alt="Laptop">
+            <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/laptop.png") ?>" alt="Laptop" height="400" layout="fixed-height"></amp-img>
           </div>
           <ul class="list-unstyled shape-group">
             <li class="shape shape-1">
-              <img src="<?php echo get_theme_file_uri("assets/media/banner/marker.png") ?>" alt="Marker">
+              <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/marker.png") ?>" alt="Marker" height="400" layout="fixed-height"></amp-img>
             </li>
             <li class="shape shape-2">
-              <img src="<?php echo get_theme_file_uri("assets/media/banner/chat-icon.png") ?>" alt="Chat">
+              <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/chat-icon.png") ?>" alt="Chat" height="400" layout="fixed-height"></amp-img>
             </li>
             <li class="shape shape-3">
-              <img src="<?php echo get_theme_file_uri("assets/media/banner/sticker.png") ?>" alt="sticker">
+              <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/sticker.png") ?>" alt="sticker" height="400" layout="fixed-height"></amp-img>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ get_header();
       <div class="col-lg-4 col-md-6">
         <div class="services-grid active">
           <div class="thumbnail">
-            <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-1.png") ?>" alt="icon">
+            <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-1.png") ?>" alt="icon"></img>
           </div>
           <div class="content">
             <h5 class="title"> <a href="#">Design</a></h5>
@@ -75,7 +75,7 @@ get_header();
       <div class="col-lg-4 col-md-6">
         <div class="services-grid">
           <div class="thumbnail">
-            <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-2.png") ?>" alt="icon">
+            <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-2.png") ?>" alt="icon"></img>
           </div>
           <div class="content">
             <h5 class="title"> <a href="#">Development</a></h5>
@@ -87,7 +87,7 @@ get_header();
       <div class="col-lg-4 col-md-6">
         <div class="services-grid">
           <div class="thumbnail">
-            <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-6.png") ?>" alt="icon">
+            <img src="<?php echo get_theme_file_uri("assets/media/icon/icon-6.png") ?>" alt="icon"></img>
           </div>
           <div class="content">
             <h5 class="title"> <a href="#">Content strategy</a></h5>
@@ -124,7 +124,9 @@ get_header();
         <div class="col-md mb-5 mb-lg-0 mt-5">
           <div class="card border shadow p-2 blog-list active">
             <div class="post-thumbnail">
-              <a href="<?php the_permalink() ?>"><img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></a>
+              <a href="<?php the_permalink() ?>">
+                <img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></img>
+              </a>
             </div>
 
             <div class="px-2 pb-0 pt-4 post-content">

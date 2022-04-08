@@ -15,7 +15,7 @@ pageBreadCrumb(array(
           <div class="single-blog">
             <div class="single-blog-content blog-grid">
               <div class="post-thumbnail">
-                <img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>">
+                <img src="<?php the_post_thumbnail_url() ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>"></img>
               </div>
 
               <div class="author">

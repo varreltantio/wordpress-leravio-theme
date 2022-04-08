@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 
-<html <?php language_attributes(); ?>>
+<html amp <?php language_attributes(); ?>>
 
 <head>
 
   <meta charset="<?php bloginfo('charset'); ?>">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="profile" href="https://gmpg.org/xfn/11">
 
   <?php wp_head(); ?>
+
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
 
 </head>
 
@@ -46,10 +116,12 @@
 
               if (has_custom_logo()) {
                 echo '<a href="' . esc_url(home_url('/')) . '" rel="home">';
-                echo '<img width="167" height="60" class="light-version-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                echo '<amp-img width="167" height="60" class="light-version-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                echo '</amp-img>';
                 echo '</a>';
                 echo '<a href="' . esc_url(home_url('/')) . '" rel="home">';
-                echo '<img width="167" height="60" class="dark-version-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                echo '<amp-img width="167" height="60" class="dark-version-logo" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                echo '</amp-img>';
                 echo '</a>';
               } else {
                 echo '<h1>' . get_bloginfo('name') . '</h1>';
