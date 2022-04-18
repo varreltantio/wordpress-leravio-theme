@@ -1,0 +1,42 @@
+.contact-form-box {
+  background-color: var(--color-white);
+  padding: 50px;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-form-box {
+    padding: 40px 30px;
+  }
+}
+
+.contact-form-box .title {
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .contact-form-box .title {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .contact-form-box .title {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-form-box .title {
+    font-size: 28px;
+  }
+}
+
+.contact-form-box .form-group .axil-btn::after {
+  width: calc(100% + 50px);
+}
+
+.contact-form-box.shadow-box {
+  -webkit-box-shadow: 0 20px 48px 0 rgba(153, 161, 170, 0.25);
+  box-shadow: 0 20px 48px 0 rgba(153, 161, 170, 0.25);
+}

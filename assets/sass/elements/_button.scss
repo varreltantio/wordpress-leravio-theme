@@ -1,0 +1,88 @@
+.axil-btn {
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  padding: 18px 55px;
+  height: auto;
+  text-align: center;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+}
+
+.axil-btn.btn-borderd {
+  border: var(--border-gray);
+  color: var(--color-dark);
+  background-color: transparent;
+}
+
+.axil-btn.btn-borderd:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.axil-btn.btn-fill-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  overflow: hidden;
+}
+
+.axil-btn.btn-fill-primary::after {
+  content: "";
+  height: 300px;
+  width: 300px;
+  background-color: var(--color-link);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0);
+  transform: translateY(-50%) translateX(-50%) scale(0);
+  -webkit-transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+}
+
+.axil-btn.btn-fill-primary:hover {
+  background-color: var(--color-link);
+  border-color: var(--color-link);
+}
+
+.axil-btn.btn-fill-primary:hover::after {
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+  transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.axil-btn.btn-fill-white {
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 48px 48px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 48px 48px 0px rgba(0, 0, 0, 0.12);
+}
+
+.axil-btn.btn-fill-white:hover {
+  background-color: var(--color-accent1);
+  color: var(--color-white);
+}
+
+.axil-btn.btn-large {
+  padding: 23px 55px;
+}
+
+@media only screen and (max-width: 991px) {
+  .axil-btn.btn-large {
+    padding: 18px 35px;
+  }
+}
+
+.axil-btn.btn-large-fluid {
+  padding: 23px;
+  width: 100%;
+}
+
+.axil-btn.btn-fluid {
+  width: 100%;
+}

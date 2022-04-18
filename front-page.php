@@ -17,17 +17,6 @@ get_header();
           <div class="large-thumb">
             <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/laptop.png") ?>" alt="Laptop" height="400" layout="fixed-height"></amp-img>
           </div>
-          <ul class="list-unstyled shape-group">
-            <li class="shape shape-1">
-              <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/marker.png") ?>" alt="Marker" height="400" layout="fixed-height"></amp-img>
-            </li>
-            <li class="shape shape-2">
-              <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/chat-icon.png") ?>" alt="Chat" height="400" layout="fixed-height"></amp-img>
-            </li>
-            <li class="shape shape-3">
-              <amp-img src="<?php echo get_theme_file_uri("assets/media/banner/sticker.png") ?>" alt="sticker" height="400" layout="fixed-height"></amp-img>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

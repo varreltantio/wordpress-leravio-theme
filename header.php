@@ -85,19 +85,19 @@
 
 <body <?php body_class(); ?>>
   <a href="#main-wrapper" id="backto-top" class="back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
+    <i class="leravio-icon icon-up">&#xe802;</i>
   </a>
 
   <div class="my_switcher d-none d-lg-block">
     <ul>
       <li title="Light Mode">
         <a href="javascript:void(0)" class="setColor light" data-theme="light">
-          <i class="fa-regular fa-lightbulb"></i>
+          <i class="leravio-icon icon-lightbulb">&#xe801;</i>
         </a>
       </li>
       <li title="Dark Mode">
         <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
-          <i class="fas fa-moon"></i>
+          <i class="leravio-icon icon-moon">&#xe800;</i>
         </a>
       </li>
     </ul>
@@ -159,12 +159,12 @@
                   <ul>
                     <li title="Light Mode">
                       <a href="javascript:void(0)" class="setColor light" data-theme="light">
-                        <i class="fa-regular fa-lightbulb"></i>
+                        <i class="leravio-icon icon-lightbulb">&#xe801;</i>
                       </a>
                     </li>
                     <li title="Dark Mode">
                       <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
-                        <i class="fas fa-moon"></i>
+                        <i class="leravio-icon icon-moon">&#xe800;</i>
                       </a>
                     </li>
                   </ul>
