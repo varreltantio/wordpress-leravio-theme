@@ -3,15 +3,11 @@
 [![Project Status: Active.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 - A WordPress theme Project for Advanced WordPress Theme Development Course.
-  This theme uses Bootstrap. [Learn](https://www.youtube.com/playlist?list=PLD8nQCAhR3tT3ehpyOpoYeUj3KHDEVK9h) to build an Advanced WordPress Theme from scratch
+  This theme uses Bootstrap. [Learn](https://leravio.com/lessons/cara-install-wordpress-di-xampp/) to build an Advanced WordPress Theme from scratch
 
-<a href="https://codeytek.com/course/advanced-wordpress-theme-development-course/" target="_blank">
-<img src="https://codeytek.com/wp-content/uploads/2020/07/banner.png" alt="WordPress theme development banner" />
+<a href="https://leravio.com/lessons/cara-install-wordpress-di-xampp/" target="_blank">
+<img width="946" alt="Screenshot_20230210_125812" src="https://user-images.githubusercontent.com/49724190/218014482-cb9af5a3-bfe9-435a-9c40-b347fbdd29ae.png">
 </a>
-
-## [Tutorial Course](https://codeytek.com/course/advanced-wordpress-theme-development-course/)
-
-## Also See - [Advanced WordPress Plugin Development](https://github.com/imranhsayed/aquila-features)
 
 ## Features
 
@@ -29,14 +25,11 @@
 
 ## Usage
 
-1. Clone the WordPress theme [Leravio](https://github.com/varreltantio/wordpress-leravio-theme) in your WordPress
-   themes directory and activate it.
+Clone the WordPress theme [Leravio](https://github.com/varreltantio/wordpress-leravio-theme) in your WordPress themes directory and activate it.
 
 ## Dashboard Setup.
 
-1. Create pages called 'Home' and 'Blog' and set them from Appearance > Customizer > Homepage Settings like so:
-
-- ![](demo/home-page-customizer-setup.png)
+Create pages called 'Home' and 'Blog' and set them from Appearance > Customizer > Homepage Settings
 
 ## Development ( To be added )
 
@@ -85,53 +78,6 @@ Format code with prettier ( TO BE ADDED )
 
 ```bash
 npm run format-js
-```
-
-Directory Structure
-
-```php
-.
-├── README.md
-├── assets
-│   ├── main.js
-│   └── src
-│       └── library
-│           ├── css
-│           │   ├── bootstrap-grid.min.css
-│           │   └── bootstrap.min.css
-│           └── js
-│               └── bootstrap.min.js
-├── footer.php
-├── front-page.php ( Home Page )
-├── functions.php
-├── header.php
-├── inc
-│   ├── classes
-│   │   ├── class-aquila-theme.php
-│   │   ├── class-assets.php
-│   │   ├── class-menus.php
-│   │   └── class-meta-boxes.php
-│   ├── helpers
-│   │   ├── autoloader.php
-│   │   └── template-tags.php
-│   └── traits
-│       └── trait-singleton.php
-├── index.php ( Blog page )
-├── page.php  ( Single Page )
-├── screenshot.png
-├── single.php ( Single Post Page )
-├── style.css
-└── template-parts
-    ├── components
-    │   └── blog
-    │       ├── entry-content.php
-    │       ├── entry-footer.php
-    │       ├── entry-header.php
-    │       └── entry-meta.php
-    ├── content-none.php
-    ├── content.php
-    └── header
-        └── nav.php
 ```
 
 ### Fixing Errors
