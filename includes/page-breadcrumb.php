@@ -6,7 +6,7 @@ function pageBreadCrumb($args = NULL)
     $args['archive'] = get_the_archive_title();
   }
 
-  if (!$args['title']) {
+  if (!isset($args['title'])) {
     $args['title'] = get_the_title();
   }
 ?>
